@@ -1,15 +1,31 @@
-
+¦* {
+    margin: 0;
+    padding: 0;
+}
 .feature {
     text-align: center;
-    background-color: rgba(7, 7, 7, 0.466);
     border-radius: .5em;
 }
 
+#banner-img p {
+    position: relative;
+    top: 25%;
+    color: white;
+}
+.btn-success {
+background-color: rgb(63, 62, 62);
+}
 #banner-img {
     
-    background: url(/images/banner.jpg) no-repeat;
-    background-size: 100% 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/banner.png');
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
 }
+
 .title {
     font-size: 2.5em;
     letter-spacing: 2px;
@@ -18,5 +34,6 @@
 }
 
 .white {
-    color: white;
+    color: rgb(255, 255, 255);
 }
+
