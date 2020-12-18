@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
 }
-.feature {
+body {
+    background-color: rgba(133, 133, 133, 0.185);
+}
+.container {
     text-align: center;
-    border-radius: .5em;
 }
 
 #banner-img p {
@@ -17,12 +19,11 @@ background-color: rgb(63, 62, 62);
 }
 #banner-img {
     
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/banner.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .8)), url('/images/banner.png');
     height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     text-align: center;
 }
 
