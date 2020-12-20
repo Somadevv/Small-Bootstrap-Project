@@ -1,40 +1,167 @@
-¦* {
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,600;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
 body {
-    background-color: rgba(133, 133, 133, 0.185);
+  background-color: rgba(216, 216, 216, 0.7);
+}
+.main-container {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background-color: rgba(27, 27, 27, 1);
+}
+.navbar {
+  width: 100%;
+  z-index: 1;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-weight: 600;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(161, 159, 159, 0.459);
+}
+.span-active {
+  color: rgb(0, 195, 255);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.navbar-brand {
+  color: rgb(0, 195, 255);
+}
+.btn-search {
+  background-color: rgb(0, 140, 255);
+}
+.navbar-nav {
+  color: red;
+}
+.container-fluid {
+  padding: 0;
 }
 .container {
-    text-align: center;
+  text-align: center;
+}
+.fa-check {
+  color: rgb(0, 195, 255);
 }
 
 #banner-img p {
-    position: relative;
-    top: 25%;
-    color: white;
+  position: relative;
+  top: 25%;
+  left: 25%;
+  color: white;
 }
-.btn-success {
-background-color: rgb(63, 62, 62);
-}
+
 #banner-img {
-    
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .8)), url('/images/banner.png');
-    height: 50vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
+  position: relative;
+  top: 16%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/banner.png");
+  box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+  height: 50vh;
+  background-position: bottom bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 220%;
+  text-align: center;
 }
 
 .title {
-    font-size: 2.5em;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 600;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .white {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+.col-lg-4 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.feature-title {
+  position: absolute;
+  top: 61%;
+  font-size: 1.2em;
+  color: rgb(12, 12, 12);
+  text-transform: uppercase;
+  font-family: "Roboto Mono";
+}
+.feature {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 17vh;
+  width: 25vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url("/images/banner_20.png");
+  box-shadow: rgba(0, 0, 0, 1) 0px 5px 10px;
+  background-size: 100% 100%;
+  height: 35vh;
+  background-repeat: no-repeat;
+}
+.feature-card {
+  
+}
+.feature:hover {
+  transform: scale(1.04);
+  transition: 200ms ease-in-out;
+}
+.mr-sm-2 {
+  position: absolute;
+  width: 11em;
+  right: 5%;
+  top: 17%;
+}
+.btn-info {
+  border: black solid 1px;
+  color: black;
 }
 
+.feature-image1 {
+  background-image: url("/images/halflife.jpg");
+}
+.feature-image2 {
+  background-image: url("/images/warzone.jpg");
+}
+.feature-image3 {
+  background-image: url("/images/cyberpunk.jpg");
+}
+.btn-search {
+  position: absolute;
+  width: 2.9em;
+  height: 2.5em;
+  top: 14%;
+  right: 1%;
+}
+#btn-hero1:hover, #btn-hero2:hover, #btn-hero3:hover {
+    color: rgb(0, 195, 255);
+}
+#btn-hero1,
+#btn-hero2,
+#btn-hero3 {
+  position: absolute;
+  top: 82%;
+  border-radius: 10px;
+  height: 6vh;
+  color: rgb(255, 248, 248);
+  border: transparent;
+  background-color: transparent;
+}
+
+#btn-hero:hover {
+  color: rgb(0, 195, 255);
+}
+#btn-hero {
+  border-radius: 10px;
+  height: 6vh;
+  position: absolute;
+  top: 57%;
+  right: 22%;
+  color: white;
+  border: rgb(0, 195, 255) solid 1px;
+  background-color: transparent;
+}
